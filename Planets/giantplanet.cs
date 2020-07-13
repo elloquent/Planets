@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Planets
 {
-    class giantplanet : planet
+    class giantplanet : planet, IHasMoons, IHasRings
     {
         private string _type;
 

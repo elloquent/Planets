@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Planets
 {
-    class planet
+   abstract class planet
     {
         private double _diameter;
         private double _mass;

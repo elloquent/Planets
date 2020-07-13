@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Planets
 {
-    class terrestialplanet : planet
+    class terrestialplanet : planet, IHasMoons, IHaitable
     {
         private bool _oxygen;
 
