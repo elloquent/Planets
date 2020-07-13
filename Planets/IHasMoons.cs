@@ -6,12 +6,12 @@ namespace Planets
 {
     interface IHasMoons 
     {
-     
-        
-        bool Hasmoon(bool _moonCount)
+
+        //public method that return a boolean to be overriden by the giantplanet  and the terrestialplanet class
+        bool Hasmoon()
         {
 
-            return _moonCount;
+            return true;
         }
     }
 }

@@ -2,10 +2,21 @@
 using System.Collections.Generic;
 using System.Text;
 
+
+
+// Author:             Richard Elridge
+//Author number#:      301107264
+//Date last modify:    July 13 2020
+//Program description: This assignment is design to test our knownlodge in Polymorphism, inheritance and interfaces.
+//                     It also gives you the oppertunity to prctices getting use to publishing on Github,overriding methods and documenting your codes
+//
+
 namespace Planets
 {
    abstract class planet
     {
+
+        //private fields
         private double _diameter;
         private double _mass;
         private double _orbitalPeriod;
@@ -14,7 +25,7 @@ namespace Planets
         private int _ringCount;
         private double _rotationPeriod;
 
-
+        // pulic properties read only
         public double Diameter { get; }
         public double Mass { get; }
         public double OritalPeriod { get; }
@@ -23,6 +34,14 @@ namespace Planets
         public int RingCount { get; }
         public string Name { get; }
 
+
+
+        /// <summary>
+        /// public constructor of the base class
+        /// </summary>
+        /// <param name="diameter"></param>
+        /// <param name="mass"></param>
+        /// <param name="name"></param>
         public planet( double diameter,double mass,string name)
         {
             _diameter = diameter;
@@ -30,6 +49,11 @@ namespace Planets
             _name = name;
         }
 
+
+        /// <summary>
+        /// method that display the results of the class properties
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return $"{Name} {Diameter} {Mass}";

@@ -6,9 +6,12 @@ namespace Planets
 {
     interface IHasRings
     {
-        public bool Hasring(int _ringCount)
+
+        //public method that return a boolean to be overriden by the giantplanet class
+        public bool Hasring()
         {
-            return _ringCount;
+            
+            return true ;
         }
     }
 }

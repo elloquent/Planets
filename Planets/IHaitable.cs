@@ -7,6 +7,8 @@ namespace Planets
     interface IHaitable
     {
 
+
+        //public method to be overriden by the terrestialplanet class
         bool Habitable(bool _oxygen)
         {
             return _oxygen;
