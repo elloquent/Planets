@@ -28,10 +28,14 @@ namespace Planets
 
 
         //public methed this method override the hasmoon method in IHasmoon interface
-        public bool Hasmoon(bool _moonCount)
+        public bool Hasmoon()
         {
-
-            return _moonCount;
+            if (MoonCount > 0)
+            {
+                return true;
+            }
+            else
+            return false;
         }
 
 
@@ -39,7 +43,12 @@ namespace Planets
         //public methed this method override the hasring method in IHasring interface
         public bool Hasring()
         {
-            return true ;
+            if (RingCount > 0)
+            {
+                return true;
+            }
+            else
+                return false;
         }
 
         /// <summary>
@@ -50,7 +59,8 @@ namespace Planets
         /// </returns>
         public override string ToString()
         {
-            return $"{_type} {Diameter} {Mass} {Name} ";
+            //return base.ToString()
+           return base.ToString() +"\t"+ _type.ToString();
         }
 
 

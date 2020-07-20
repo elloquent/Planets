@@ -9,9 +9,9 @@ namespace Planets
 
 
         //public method to be overriden by the terrestialplanet class
-        bool Habitable(bool _oxygen)
+        bool Habitable()
         {
-            return _oxygen;
+            return true;
         }
     }
 }

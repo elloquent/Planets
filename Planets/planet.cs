@@ -30,8 +30,16 @@ namespace Planets
         public double Mass { get; }
         public double OritalPeriod { get; }
         public double RotationPeriod { get; }
-        public int MoonCount { get; }
-        public int RingCount { get; }
+        public int MoonCount { get
+            {
+                return _moonCount;
+            }
+        }
+        public int RingCount { get
+            { 
+                return _ringCount; 
+            }
+        }
         public string Name { get; }
 
 
@@ -56,7 +64,7 @@ namespace Planets
         /// <returns></returns>
         public override string ToString()
         {
-            return $"{Name} {Diameter} {Mass}";
+            return $"{_name}  {_diameter}  {_mass}";
         }
 
 

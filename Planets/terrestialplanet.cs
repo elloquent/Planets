@@ -24,17 +24,26 @@ namespace Planets
 
 
         //public methed this method override the hasmoon method in IHasmoon interface
-        public bool Hasmoon(bool _moonCount)
+        public bool Hasmoon()
         {
-
-            return _moonCount;
+            if (MoonCount > 0)
+            {
+                return true;
+            }
+            else
+                return false;
+            
         }
 
 
        //public methed this method override the habitable method in Ihabitable interface
-        public bool Habitable(bool _oxygen)
+        public bool Habitable()
         {
-            return _oxygen;
+            if (_oxygen == true)
+            {
+                return true;
+            }
+            else return false;
         }
 
 
@@ -46,7 +55,7 @@ namespace Planets
         /// </returns>
         public override string ToString()
         {
-            return $" {_oxygen} {Diameter} {Mass} {Name} ";
+            return base.ToString() +"\t"+ _oxygen.ToString();
         }
     }
 }
